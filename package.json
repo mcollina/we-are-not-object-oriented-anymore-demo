@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
+    "chairo": "^0.2.0",
+    "hapi": "^11.0.2",
+    "joi": "^6.9.1",
     "seneca": "^0.7.2",
     "uuid": "^2.0.1"
   },
