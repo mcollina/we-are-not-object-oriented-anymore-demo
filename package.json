@@ -5,9 +5,12 @@
   "dependencies": {
     "chairo": "^0.2.0",
     "hapi": "^11.0.2",
+    "inert": "^3.2.0",
     "joi": "^6.9.1",
+    "lout": "^7.2.0",
     "seneca": "^0.7.2",
-    "uuid": "^2.0.1"
+    "uuid": "^2.0.1",
+    "vision": "^3.0.0"
   },
   "devDependencies": {},
   "scripts": {

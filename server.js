@@ -7,7 +7,11 @@ var Joi = require('joi')
 var server = new Hapi.Server()
 server.connection({ port: 3000 })
 
-server.register({ register: Chairo }, function (err) {
+server.register([
+  require('vision'),
+  require('inert'),
+  { register: require('lout') },
+  { register: Chairo } ], function (err) {
 
   server.seneca.use('devices')
 
@@ -39,6 +43,9 @@ server.register({ register: Chairo }, function (err) {
   })
 })
 
-server.start(function () {
+server.start(function (err) {
+  if (err) {
+    throw err
+  }
   console.log('Server running at:', server.info.uri)
 })
